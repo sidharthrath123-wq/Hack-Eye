@@ -1,0 +1,25 @@
+{
+    "module": "Authentication Log Anomaly Detection",
+    "dataset_rows": 10000,
+    "features_used": 17,
+    "classification_threshold": 0.4,
+    "risk_thresholds": {
+        "LOW": "< 40%",
+        "MEDIUM": "40% - < 60%",
+        "HIGH": "60% - < 80%",
+        "CRITICAL": ">= 80%"
+    },
+    "evidence_rules": {
+        "Failed Attempts >= 3": "Multiple failed login attempts",
+        "Session Duration > 900": "Unusually long session duration",
+        "Behavioral Score < 57": "Low behavioral score",
+        "Login Status = Fail": "Login attempt failed",
+        "Location = Mars/Antarctica": "Unusual location"
+    },
+    "recommended_actions": {
+        "LOW": "Allow login and continue monitoring",
+        "MEDIUM": "Monitor login and consider additional verification",
+        "HIGH": "Require additional verification and alert",
+        "CRITICAL": "Block login and alert security team"
+    }
+}

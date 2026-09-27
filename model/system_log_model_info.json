@@ -1,0 +1,21 @@
+{
+    "module": "System Log Detection",
+    "dataset": "ADFA-LD",
+    "total_records": 5267,
+    "normal_records": 5207,
+    "attack_records": 60,
+    "number_of_features": 15,
+    "system_threshold": 0.5,
+    "test_accuracy": 1.0,
+    "test_precision": 1.0,
+    "test_recall": 1.0,
+    "test_f1": 1.0,
+    "attack_types": [
+        "Hydra_FTP",
+        "Hydra_SSH",
+        "Web_Shell",
+        "Meterpreter",
+        "Java_Meterpreter",
+        "Adduser"
+    ]
+}
